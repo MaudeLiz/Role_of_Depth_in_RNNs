@@ -26,7 +26,7 @@ params_dataset:
   datatype: &type
     'real'
   copymode: &mode
-    "sin"    # {'linear, 'sin'}
+    "sin"    # {'linear, 'sin', 'parity'}
 
 train_dataset:
   _target_: data_synthetic.SyntheticCopyDataset
