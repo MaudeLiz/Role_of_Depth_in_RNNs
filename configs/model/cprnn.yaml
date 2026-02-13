@@ -1,0 +1,28 @@
+### Shakespeare experiment ###
+# _target_: models.DeepCPRNN
+# vocab_size: ${params_dataset.vocab_size}
+# hidden_size: 128 
+# num_layers: 4
+# embedding_dim: ${params_dataset.vocab_size}
+# rank: 8
+# tokenizer: None
+# dropout: 0.0
+# dropout_between_layers: False
+# activation: 'identity'
+# readout_activation: 'identity'
+# cell_gate: 'identity'
+
+
+### Synthtetic experiment ###
+_target_: models.DeepCPRNN
+vocab_size: ${params_dataset.vocab_size}
+hidden_size: 64 
+num_layers: 4
+embedding_dim: null
+rank: 8
+tokenizer: None
+dropout: 0.0
+dropout_between_layers: False
+activation: 'identity'
+readout_activation: 'identity'
+gate: 'identity'

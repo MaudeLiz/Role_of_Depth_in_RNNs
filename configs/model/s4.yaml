@@ -1,0 +1,10 @@
+
+  _target_: models.S4ModelWithEmbedding
+  d_input: ${datamodule.vocab_size}
+  embedding_dim: 107
+  d_output: ${datamodule.vocab_size}
+  d_model: 107
+  d_state: 64
+  n_layers: 4
+  prenorm: True
+  dropout: 0.1

@@ -1,0 +1,23 @@
+#### Shakespeare experiement ####
+# _target_: models.DeepRNNWithEmbedding
+# vocab_size: ${params_dataset.vocab_size}
+# output_size: ${params_dataset.vocab_size}
+# embedding_dim: 107 
+# hidden_size: 256 
+# num_layers: 2
+# activation: 'identity'
+# readout_activation: 'identity'
+# rnncell: 'rnn'
+
+#### Synthetic experiement ####
+  _target_: models.DeepRNNWithEmbedding
+  vocab_size: ${params_dataset.vocab_size}
+  output_size: ${params_dataset.vocab_size}
+  embedding_dim: null
+  hidden_size: 25 
+  num_layers: 2
+  activation: 'identity'
+  readout_activation: 'identity'
+  rnncell: 'rnn'
+  # residual: False
+  # mlp: False
